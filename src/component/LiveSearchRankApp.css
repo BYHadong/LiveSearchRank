@@ -1,0 +1,117 @@
+/* 체크 박스 숨기기 */
+
+input[type=checkbox] {
+    display: none;
+}
+
+/* 맨위 */
+
+._searchRankBoxApp {
+    display: flex;
+    align-items: center;
+    border: solid 0.1px black;
+    min-height: 40px;
+    max-height: 40px;
+}
+
+/* 인기 태그 */
+
+._tag {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+._tagText {
+    font-size: 13px;
+    width: 40px;
+    border: solid 1px aqua;
+    border-radius: 100px 100px 100px 100px;
+    text-align: center;
+    padding: 4px;
+}
+
+/* 체크가 됬을때 */
+
+._titleCheck {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    padding: 8px 8px 8px 20px;
+}
+
+/* 1위 제목 */
+
+._title {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    padding: 8px;
+}
+
+.__rank {
+    font-size: 13px;
+    width: 10%;
+}
+
+/* 체크가 됬을때 */
+
+.__rankTitleCheck {
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.__rankTitle {
+    font-size: 13px;
+}
+
+/* 랭킹을 보여도!!! */
+
+._showRank {
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+/* 체크 봑스 */
+
+#_showCheckBox:checked~._rankBox {
+    display: flex;
+}
+
+/* 렝킹 박스 */
+
+._rankBox {
+    display: none;
+    border: solid 0.1px black;
+    border-top: none;
+}
+
+._rank {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10%;
+}
+
+._rankNum {
+    font-size: 16px;
+    color: blue;
+    min-height: 30px;
+}
+
+._rankTitle {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-left: 5%;
+}
+
+._rankTitleText {
+    font-size: 16px;
+    min-height: 30px;
+}

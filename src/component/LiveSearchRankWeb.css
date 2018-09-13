@@ -1,0 +1,87 @@
+/* Web */
+/* 맨위 */
+.searchRankBoxWeb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid 0.1px black;
+}
+
+/* 1위 제목 */
+
+.titleCheck {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    padding: 8px;
+}
+
+.rankTitleCheck {
+    font-size: 20px;
+}
+
+/* 랭킹을 보여도!!! */
+
+.showRank {
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+/* 체크 봑스 */
+
+.searchRankBoxWeb:hover~.rankBox {
+    display: flex;
+}
+
+/* 렝킹 박스 */
+
+.rankBox {
+    display: none;
+    flex-direction: column;
+    border: solid 0.1px black;
+    background-color: white;
+    position: absolute;
+    width: 95%;
+    top: 35px;
+    left: 50%;
+    transform: translate(-50%)
+}
+
+.rankBoxTitle {
+    color: lightseagreen;
+    font-size: 20px;
+    padding: 16px 8px 16px 2.5%;
+}
+
+.showRankBox {
+    display: flex;
+}
+
+.rank {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5%;
+}
+
+.rankNum {
+    font-size: 20px;
+    color: blue;
+    min-height: 30px;
+    margin-bottom: 8px;
+}
+
+.rankTitle {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.rankTitleText {
+    font-size: 20px;
+    min-height: 30px;
+    margin-bottom: 8px;
+}
