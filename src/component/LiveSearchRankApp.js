@@ -41,28 +41,14 @@ class LiveSearchRankApp extends Component {
                     </label>
                     <div className="_rankBox">
                         <div className="_rank">
-                            <span className="_rankNum">{this.props.rank[0]}</span>
-                            <span className="_rankNum">{this.props.rank[1]}</span>
-                            <span className="_rankNum">{this.props.rank[2]}</span>
-                            <span className="_rankNum">{this.props.rank[3]}</span>
-                            <span className="_rankNum">{this.props.rank[4]}</span>
-                            <span className="_rankNum">{this.props.rank[5]}</span>
-                            <span className="_rankNum">{this.props.rank[6]}</span>
-                            <span className="_rankNum">{this.props.rank[7]}</span>
-                            <span className="_rankNum">{this.props.rank[8]}</span>
-                            <span className="_rankNum">{this.props.rank[9]}</span>
+                            {this.props.rank.map((data) => {
+                                return (<span className="_rankNum">{data}</span>)
+                            })}
                         </div>
                         <div className="_rankTitle">
-                            <span className="_rankTitleText">{this.props.title[0]}</span>
-                            <span className="_rankTitleText">{this.props.title[1]}</span>
-                            <span className="_rankTitleText">{this.props.title[2]}</span>
-                            <span className="_rankTitleText">{this.props.title[3]}</span>
-                            <span className="_rankTitleText">{this.props.title[4]}</span>
-                            <span className="_rankTitleText">{this.props.title[5]}</span>
-                            <span className="_rankTitleText">{this.props.title[6]}</span>
-                            <span className="_rankTitleText">{this.props.title[7]}</span>
-                            <span className="_rankTitleText">{this.props.title[8]}</span>
-                            <span className="_rankTitleText">{this.props.title[9]}</span>
+                            {this.props.title.map((data) => {
+                                return (<span className="_rankTitleText">{data}</span>)
+                            })}
                         </div>
                     </div>
                 </div>
@@ -85,32 +71,6 @@ class LiveSearchRankApp extends Component {
                             </div>
                         </div>
                     </label>
-                    <div className="_rankBox">
-                        <div className="_rank">
-                            <span className="_rankNum">{this.props.rank[0]}</span>
-                            <span className="_rankNum">{this.props.rank[1]}</span>
-                            <span className="_rankNum">{this.props.rank[2]}</span>
-                            <span className="_rankNum">{this.props.rank[3]}</span>
-                            <span className="_rankNum">{this.props.rank[4]}</span>
-                            <span className="_rankNum">{this.props.rank[5]}</span>
-                            <span className="_rankNum">{this.props.rank[6]}</span>
-                            <span className="_rankNum">{this.props.rank[7]}</span>
-                            <span className="_rankNum">{this.props.rank[8]}</span>
-                            <span className="_rankNum">{this.props.rank[9]}</span>
-                        </div>
-                        <div className="_rankTitle">
-                            <span className="_rankTitleText">{this.props.title[0]}</span>
-                            <span className="_rankTitleText">{this.props.title[1]}</span>
-                            <span className="_rankTitleText">{this.props.title[2]}</span>
-                            <span className="_rankTitleText">{this.props.title[3]}</span>
-                            <span className="_rankTitleText">{this.props.title[4]}</span>
-                            <span className="_rankTitleText">{this.props.title[5]}</span>
-                            <span className="_rankTitleText">{this.props.title[6]}</span>
-                            <span className="_rankTitleText">{this.props.title[7]}</span>
-                            <span className="_rankTitleText">{this.props.title[8]}</span>
-                            <span className="_rankTitleText">{this.props.title[9]}</span>
-                        </div>
-                    </div>
                 </div>
             )
         }
